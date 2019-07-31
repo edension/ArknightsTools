@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_card_item_color">#123456</color>
+
+    <color name="base_div_color">@android:color/darker_gray</color>
+
+    <color name="tag_rare_one_color">#A9A9A9</color>
+    <color name="tag_rare_two_color">#9370DB</color>
+    <color name="tag_rare_three_color">#CCCC33</color>
+    <color name="tag_rare_four_color">#ffa500</color>
+</resources>
+

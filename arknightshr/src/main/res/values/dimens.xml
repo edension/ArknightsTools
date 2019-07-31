@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="base_card_item_corner_radius">10dp</dimen>
+    <dimen name="base_card_item_elevation">0dp</dimen>
+    <dimen name="base_card_item_padding_x">10dp</dimen>
+    <dimen name="base_card_item_padding_y">5dp</dimen>
+    <dimen name="base_card_item_margin_x">5dp</dimen>
+    <dimen name="base_card_item_margin_y">5dp</dimen>
+    <dimen name="base_card_item_name_tv_size">18sp</dimen>
+
+    <dimen name="hr_tag_item_margin_x">10dp</dimen>
+
+    <dimen name="compose_result_item_tag_list_width">135dp</dimen>
+    <dimen name="compose_result_item_list_margin_x">5dp</dimen>
+    <dimen name="compose_result_item_div_margin_y">5dp</dimen>
+    <dimen name="compose_result_item_content_margin_top">5dp</dimen>
+    <dimen name="compose_result_item_content_margin_x">5dp</dimen>
+    <dimen name="compose_result_item_root_margin_bottom">5dp</dimen>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_item_root"
+        android:layout_marginVertical="@dimen/base_card_item_margin_y"
+        android:layout_marginHorizontal="@dimen/base_card_item_margin_x"
+        app:contentPaddingLeft="@dimen/base_card_item_padding_x"
+        app:contentPaddingRight="@dimen/base_card_item_padding_x"
+        app:contentPaddingTop="@dimen/base_card_item_padding_y"
+        app:contentPaddingBottom="@dimen/base_card_item_padding_y"
+        app:cardElevation="@dimen/base_card_item_elevation"
+        app:cardCornerRadius="@dimen/base_card_item_corner_radius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/card_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/base_card_item_name_tv_size"
+            android:text="标题" />
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
