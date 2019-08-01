@@ -238,7 +238,7 @@ public class MainActivity extends BaseActivity {
             ArrayList<CharacterBean> characterBeans = composeResultBeans.get(i).getCharacterBeans();
             ArrayList<TagBean> tagBeans = composeResultBeans.get(i).getTagBeans();
 
-            View parentView = i < resultGroup.getChildCount() ? resultGroup.getChildAt(i) : null;
+            View parentView = i < resultGroup.getChildCount() && resultGroup.getChildCount() > 0 ? resultGroup.getChildAt(i) : null;
             if (null == parentView) {
                 isNeedAddView = true;
                 parentView = getComposeView(parentDetachedViewList, R.layout.compose_result_new_item);
@@ -332,7 +332,7 @@ public class MainActivity extends BaseActivity {
                 boolean isNeedAddView = false;
 
                 View tagAddView = null;
-                tagAddView = j < parentGroup.getChildCount() ? parentGroup.getChildAt(j) : null;
+                tagAddView = j < parentGroup.getChildCount() && parentGroup.getChildCount() > 0 ? parentGroup.getChildAt(j) : null;
                 if (null == tagAddView) {
                     isNeedAddView = true;
                     tagAddView = getComposeView(detachedList, R.layout.base_card_item);
