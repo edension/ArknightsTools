@@ -337,6 +337,7 @@ public class MainActivity extends BaseActivity {
                     isNeedAddView = true;
                     tagAddView = getComposeView(detachedList, R.layout.base_card_item);
                 }
+
                 BaseCardViewHolder baseCardViewHolder = null;
                 if (null == tagAddView.getTag()) {
                     baseCardViewHolder = new BaseCardViewHolder(tagAddView);
@@ -347,6 +348,8 @@ public class MainActivity extends BaseActivity {
                     } else if (obj instanceof CharacterBean) {
                         ((CharacterBean) obj).setSelected(false);
                     }
+                } else {
+                    baseCardViewHolder = (BaseCardViewHolder) tagAddView.getTag();
                 }
                 baseCardViewHolder.bindCardViewHolder(baseCardBeans.get(j), false);
 
