@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/compose_result_item_root_margin_bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginLeft="@dimen/compose_result_item_content_margin_x"
+        android:layout_marginRight="@dimen/compose_result_item_content_margin_x"
+        android:layout_marginTop="@dimen/compose_result_item_content_margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:id="@+id/compose_result_item_tags"
+            android:layout_width="@dimen/compose_result_item_tag_list_width"
+            android:layout_height="wrap_content">
+        </com.zhy.view.flowlayout.FlowLayout>
+
+        <com.zhy.view.flowlayout.FlowLayout
+            android:id="@+id/compose_result_item_characters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/compose_result_item_list_margin_x">
+        </com.zhy.view.flowlayout.FlowLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="@dimen/compose_result_item_div_margin_y"
+        android:layout_marginTop="@dimen/compose_result_item_div_margin_y"
+        android:background="@color/base_div_color"></View>
+</LinearLayout>
+

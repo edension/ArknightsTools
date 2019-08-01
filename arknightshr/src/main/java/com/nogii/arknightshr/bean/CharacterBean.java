@@ -18,6 +18,8 @@ public class CharacterBean implements Comparable<CharacterBean> {
     private int star;
     private List<TagBean> tag;
 
+    private boolean isSelected;
+
     public String getName() {
         return name;
     }
@@ -53,5 +55,13 @@ public class CharacterBean implements Comparable<CharacterBean> {
     @Override
     public int compareTo(@NonNull CharacterBean o) {
         return o.star - star;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 }

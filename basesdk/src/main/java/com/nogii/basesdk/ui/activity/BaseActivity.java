@@ -13,6 +13,11 @@ public class BaseActivity extends Activity {
         initView();
         initData();
         initEvent();
+        initFinished();
+    }
+
+    protected void initFinished() {
+
     }
 
     protected void initView() {

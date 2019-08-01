@@ -8,6 +8,8 @@ public class TagBean implements Comparable<TagBean> {
     private String name;
     private int rare;
 
+    private boolean isSelected;
+
     public long getId() {
         return id;
     }
@@ -35,5 +37,13 @@ public class TagBean implements Comparable<TagBean> {
     @Override
     public int compareTo(@NonNull TagBean o) {
         return this.id > o.getId() ? 1 : -1;
+    }
+
+    public boolean isSelected() {
+        return isSelected;
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
     }
 }

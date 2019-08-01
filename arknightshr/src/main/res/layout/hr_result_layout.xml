@@ -5,7 +5,17 @@
     android:layout_height="match_parent"
     android:descendantFocusability="blocksDescendants">
 
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/hr_result_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
     <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/hr_result_list">
